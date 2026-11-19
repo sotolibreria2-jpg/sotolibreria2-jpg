@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#071c25">
+
+    <title>SOTO | Librería & Papelería</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- BARRA SUPERIOR -->
+<div class="top-bar">
+    ✨ BIENVENIDOS A  LIBRERIA SOTO | UN UNIVERSO DE UTILES ESCOLARES ✨
+</div>
+
+<!-- ENCABEZADO -->
+<header class="header" id="inicio">
+
+    <div class="logo">
+        <h1>SOTO<span>.</span></h1>
+        <p>LIBRERÍA & PAPELERÍA</p>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle"
+        aria-label="Abrir menú" aria-expanded="false">
+        ☰
+    </button>
+
+    <nav id="navbar">
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-icons">
+        <button id="searchButton" aria-label="Buscar productos">⌕</button>
+        <a href="#productos" aria-label="Favoritos">
+            ♡ <span id="cartCount">0</span>
+        </a>
+    </div>
+
+</header>
+
+<!-- PORTADA -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="tag">✦ UN MUNDO DE CREATIVIDAD LIBRERIA SOTO ✦</span>
+
+        <h2>
+            ¡Todo lo que necesitas
+            para <span>aprender y crear!</span>
+        </h2>
+
+        <p>
+            Descubre un universo de colores, imaginación y creatividad.
+            Encuentra útiles escolares, materiales de arte,
+            papelería y mucho más en LIBRERIA SOTO.
+        </p>
+
+        <a href="#productos" class="btn">
+            Explorar productos →
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="img/principal.png">
+
+        <div class="floating-card">
+            🌴
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BENEFICIOS -->
+<section class="benefits">
+
+    <div>
+        <span>📚</span>
+        <h3>Útiles escolares</h3>
+        <p>Todo para estudiar</p>
+    </div>
+
+    <div>
+        <span>🎨</span>
+        <h3>Arte y creatividad</h3>
+        <p>Deja volar tu imaginación</p>
+    </div>
+
+    <div>
+        <span>✏️</span>
+        <h3>lapiceros</h3>
+        <p>Productos para todos</p>
+    </div>
+
+    <div>
+        <span>💚</span>
+        <h3>Calidad SOTO</h3>
+        <p>Todo en un solo lugar</p>
+    </div>
+
+</section>
+
+<!-- CATEGORÍAS -->
+<section class="section" id="categorias">
+
+    <div class="section-heading">
+        <span>NUESTRAS CATEGORÍAS</span>
+        <h2>Explora nuestro mundo</h2>
+        <p>Encuentra todo lo que necesitas.</p>
+    </div>
+
+    <div class="categories">
+
+        <a href="#productos" class="category" data-category="cuadernos">
+            <span>📒</span>
+            <h3>Cuadernos</h3>
+            <p>Libretas y agendas</p>
+        </a>
+
+        <a href="#productos" class="category" data-category="escritura">
+            <span>✏️</span>
+            <h3>Escritura</h3>
+            <p>Lápices y bolígrafos</p>
+        </a>
+
+        <a href="#productos" class="category" data-category="pintura">
+            <span>🎨</span>
+            <h3>pintura</h3>
+            <p>Colores y pinceles</p>
+        </a>
+
+        <a href="#productos" class="category" data-category="marcadores">
+            <span>🖍️</span>
+            <h3>marcadores</h3>
+            <p>Diseño para todo</p>
+        </a>
+
+        <a href="#productos" class="category" data-category="hojas">
+            <span>📑 </span>
+            <h3>hojas</h3>
+            <p>hojas de tamaños</p>
+        </a>
+
+        <a href="#productos" class="category" data-category="materiales">
+            <span>✂️</span>
+            <h3>materiales</h3>
+            <p>Material creativo</p>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- PRODUCTOS -->
+<section class="section gallery-section" id="productos">
+
+    <div class="section-heading">
+        <span>DESCUBRE SOTO</span>
+        <h2>Nuestros productos</h2>
+        <p>Encuentra todo para tu colegio y creatividad.</p>
+    </div>
+
+    <input
+        type="search"
+        id="searchInput"
+        placeholder="🔍 Buscar útiles escolares..."
+        aria-label="Buscar productos">
+
+    <!-- FILTROS -->
+    <div class="filters">
+
+        <button class="filter active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="cuadernos">Cuadernos</button>
+        <button class="filter" data-filter="escritura">Escritura</button>
+        <button class="filter" data-filter="pintura">pintura</button>
+        <button class="filter" data-filter="marcadores">marcadores</button>
+        <button class="filter" data-filter="hojas">hojas</button>
+        <button class="filter" data-filter="materiales">materiales</button>
+
+    </div>
+
+    <!-- GALERÍA -->
+    <div class="products" id="productGrid">
+
+        <article class="product" data-category="cuadernos">
+            <img src="img/caligrafia.jpeg" alt="Cuadernos">
+            <div class="product-info">
+                <span>CUADERNOS</span>
+                <h3>Cuaderno de caligrafia</h3>
+                <p>para niños y niñas que puedan practicar su escrituta y mejoras en las letras y abecedarios</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                <article class="product" data-category="cuadernos">
+            <img src="img/2.jpg" alt="Cuadernos">
+            <div class="product-info">
+                <span>CUADERNOS</span>
+                <h3>Cuaderno de music</h3>
+                <p>anota tus notas de musica como sinfonias,himnos,canciones,canciones que te gusten y poder practica.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                <article class="product" data-category="cuadernos">
+            <img src="img/3.jpg" alt="Cuadernos">
+            <div class="product-info">
+                <span>CUADERNOS</span>
+                <h3>Cuadernos escolares</h3>
+                <p>cuaderno pequeño util para llevarlo a todos lados con una gran facilidad</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                <article class="product" data-category="cuadernos">
+            <img src="img/4.jpg" alt="Cuadernos">
+            <div class="product-info">
+                <span>CUADERNOS</span>
+                <h3>Cuaderno de hojas blancas</h3>
+                <p>dibuja o anota as tu creatividad,utilizalo segun tu creatividad.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                <article class="product" data-category="cuadernos">
+            <img src="img/5.jpg" alt="Cuadernos">
+            <div class="product-info">
+                <span>CUADERNOS</span>
+                <h3>Cuadernos escolares</h3>
+                <p>cuaderno anotas tu tareas,temas,practicas etc.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+        <article class="product" data-category="escritura">
+            <img src="img/lapi 1.jpg" alt="Lápices">
+            <div class="product-info">
+                <span>ESCRITURA</span>
+                <h3>Lápiceros borrable </h3>
+                <p>Permite  borrar la tinta con so borrador especial</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                <article class="product" data-category="escritura">
+            <img src="img/lapi3.jpg" alt="Lápices">
+            <div class="product-info">
+                <span>ESCRITURA</span>
+                <h3>Lápiceros de colores</h3>
+                <p>Para escribir tus mejores ideas de colores, titulos y decoracion
+                </p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                <article class="product" data-category="escritura">
+            <img src="img/lapi2.jpg" alt="Lápices">
+            <div class="product-info">
+                <span>ESCRITURA</span>
+                <h3>bolígrafos</h3>
+                <p>Para escribir y a tus apuntes</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+         <article class="product" data-category="escritura">
+            <img src="img/lapi4.jpg" alt="Lápices">
+            <div class="product-info">
+                <span>ESCRITURA</span>
+                <h3>Lápices retractil</h3>
+                <p>Para escribir y anotar tus ideas
+                    abre y cierra con un boton
+                </p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                        <article class="product" data-category="escritura">
+            <img src="img/lapizz5.jpg" alt="Lápices">
+            <div class="product-info">
+                <span>ESCRITURA</span>
+                <h3>Lápiz</h3>
+                <p>lapiz con borrador para dibujar dibujos 
+                </p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article> 
+
+
+                        <article class="product" data-category="escritura">
+            <img src="img/lapicero6.jpg" alt="Lápices">
+            <div class="product-info">
+                <span>ESCRITURA</span>
+                <h3>Lápicero azul</h3>
+                <p>Para escribir en tus apuntes o anotar en tus clases,anotar.
+                </p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article> 
+        
+                        <article class="product" data-category="escritura">
+            <img src="img/lapicerNE7.jpg" alt="Lápices">
+            <div class="product-info">
+                <span>ESCRITURA</span>
+                <h3>Lápicero negro</h3>
+                <p>Para escribir tus anotes 
+                </p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+
+        <article class="product" data-category="escritura">
+            <img src="img/lapiceros de cor.jpg" alt="Lápices">
+            <div class="product-info">
+                <span>ESCRITURA</span>
+                <h3>Lápiceros de colores</h3>
+                <p>Para escribir de dintintos colores y tener tu creatividad 
+                </p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article> 
+
+
+        <article class="product" data-category="pintura">
+            <img src="img/PIN1.jpg" alt="Pinturas">
+            <div class="product-info">
+                <span>PINTURA</span>
+                <h3>Pinturas de tempera</h3>
+                <p>la pintura ideal para trabajos escolares y manualidades</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                <article class="product" data-category="pintura">
+            <img src="img/PINTU2.jpg" alt="pintura">
+            <div class="product-info">
+                <span>PINTURA</span>
+                <h3>pintura acrilica</h3>
+                <p>esta pimtura es para pintar sobre carton, madera y otras superficies</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+        <article class="product" data-category="pintura">
+            <img src="img/PINTU3.jpg" alt="pintura">
+            <div class="product-info">
+                <span>PINTURA</span>
+                <h3>pinturas para los dedos</h3>
+                <p>Un mundo lleno de colores para actividades artisticas infantiles.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+        
+        <article class="product" data-category="pintura">
+            <img src="img/PINTU4.jpg" alt="pintura">
+            <div class="product-info">
+                <span>PINTURA</span>
+                <h3>pintura de aerosol</h3>
+                <p>el aerosol es para proyectos de decoracion como grafittis y requiere supervision adulta.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+
+        <article class="product" data-category="marcadores">
+            <img src="img/marcadores1.jpg" alt="marcadores">
+            <div class="product-info">
+                <span>MARCADORES</span>
+                <h3>marcadores permamentes</h3>
+                <p>este marcador es pra escribir sobre distintas superficies y colorear a tu creatividad</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+
+                <article class="product" data-category="marcadores">
+            <img src="img/marcado2.jpg" alt="marcadores">
+            <div class="product-info">
+                <span>MARCADORES</span>
+                <h3>marcadores de punta gruesa</h3>
+                <p>con este marcador podar colorear y realizar trazos anchos</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                <article class="product" data-category="marcadores">
+            <img src="img/marcad3.jpg" alt="marcadores">
+            <div class="product-info">
+                <span>MARCADORES</span>
+                <h3>marcadores resaltantes</h3>
+                <p>marcador coloridos con la cual podras resaltar textos y apuntes</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                <article class="product" data-category="marcadores">
+            <img src="img/marcado4.jpg" alt="marcadores">
+            <div class="product-info">
+                <span>MARCADORES</span>
+                <h3>marcador brillosos</h3>
+                <p>Comodidad  con la cual podras dar color brillosos a tu creatividad</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>                <article class="product" data-category="marcadores">
+            <img src="img/marcadores5.jpg" alt="marcadores">
+            <div class="product-info">
+                <span>MARCADORES</span>
+                <h3>marcador</h3>
+                <p>marcadores de dintintos colores para decorar</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+
+
+        <article class="product" data-category="hojas">
+            <img src="img/hoja1.jpg" alt="Material de escritorio">
+            <div class="product-info">
+                <span>HOJA</span>
+                <h3>hojas blancas de papel </h3>
+                <p>hojas para tu creatividad y dibujar con colores sugun tu creatividad</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                <article class="product" data-category="hojas">
+            <img src="img/hoj2.jpg" alt="Material de escritorio">
+            <div class="product-info">
+                <span>HOJA</span>
+                <h3>hoja cuadricula  </h3>
+                <p>hojas para tu creatividad o tus apuntes de cuaderno</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                <article class="product" data-category="hojas">
+            <img src="img/hoja3.jpg" alt="Material de escritorio">
+            <div class="product-info">
+                <span>HOJA</span>
+                <h3>hojas de color</h3>
+                <p>hojas de colores de topo tipo para tus decoracion, tu creatividad</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                <article class="product" data-category="hojas">
+            <img src="img/hoja4.jpg" alt="Material de escritorio">
+            <div class="product-info">
+                <span>HOJA</span>
+                <h3>papel  crepel</h3>
+                <p>papel crepel,son finitas de cual podras de colarar tu cartulinas</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+ 
+        <article class="product" data-category="hojas">
+            <img src="img/cartulina 5.webp" alt="Material de escritorio">
+            <div class="product-info">
+                <span>HOJA</span>
+                <h3>cartulina</h3>
+                <p>hoja grande para realizar tus exposiones creativas de colores</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+ 
+
+
+        <article class="product" data-category="materiales">
+            <img src="img/BORRA1.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>borrador</h3>
+                <p>Material para borrar escrituras.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+
+                <article class="product" data-category="materiales">
+            <img src="img/TAJADO2.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Material</h3>
+                <p>Material para sacar punta a un lapiz o pinturas.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+        <article class="product" data-category="materiales">
+            <img src="img/CORECTOR3.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Corector</h3>
+                <p>Material coreguir herrores de boligrafos,marcadores.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+        <article class="product" data-category="materiales">
+            <img src="img/ESCUADRA4.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Escuadra</h3>
+                <p>Material plastico se utiliza para dibujar angulos y lineas perpendiculares.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                        <article class="product" data-category="materiales">
+            <img src="img/ETIQUETAS.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Notas adhesivas</h3>
+                <p>Sirven para dejar recordatorios y marcar paginas.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+        <article class="product" data-category="materiales">
+            <img src="img/TRANSPORTADOR5.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Material</h3>
+                <p>Regla que sirve para medir y construir angulos.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+        <article class="product" data-category="materiales">
+            <img src="img/COPAS6.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Material compas</h3>
+                <p>Material metalico y plastico se utiliza para trazar circunferencia y arcos</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+        <article class="product" data-category="materiales">
+            <img src="img/PINCEL7.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Material pincel</h3>
+                <p>Material de madera o plastico y sirven para aplicar pintura y colores superficies.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+ 
+        <article class="product" data-category="materiales">
+            <img src="img/PLASTILINA8.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Material plastilina</h3>
+                <p>Material de masa moldeable con ceras, aceites y pigmentos se utilza para formar figuras y moldear.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+        <article class="product" data-category="materiales">
+            <img src="img/PALITOS9.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Palitos de helado de colores</h3>
+                <p>material de madera que se utiliza para maquetas, cinstrucciones y manualidades.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+        <article class="product" data-category="materiales">
+            <img src="img/PEGAMEN10.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Material pegamento</h3>
+                <p>material  adhesivo a base de polimeros y agua se utiliza para pegar papel,carton y materiales.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+        <article class="product" data-category="materiales">
+            <img src="img/BARRZ11.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Pegamento en barra</h3>
+                <p>material adhesivo solido y envase de plastico sirve para pegar papel,materiales.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+
+         <article class="product" data-category="materiales">
+            <img src="img/CINTA12.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Material cinta</h3>
+                <p>sinta blanca para colar materiales.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+
+        <article class="product" data-category="materiales">
+            <img src="img/CLIPS13.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Material </h3>
+                <p>marerial para sujetar y odenar documentos.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                        <article class="product" data-category="materiales">
+            <img src="img/ENGRANPADORA14.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>engrampadora</h3>
+                <p>material de plastico se utiliza para unir hojas.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                        <article class="product" data-category="materiales">
+            <img src="img/GRAPAS15.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>material</h3>
+                <p>sirve para unir hojas y se usa en una engrampadora .</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                        <article class="product" data-category="materiales">
+            <img src="img/16 PERJARADORa.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Perjoradora</h3>
+                <p>material para perjorar hojas.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                        <article class="product" data-category="materiales">
+            <img src="img/17 tabla.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Tabla quimica</h3>
+                <p>sirve para ver y estuar .</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+
+                        <article class="product" data-category="materiales">
+            <img src="img/18 lana.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>lana</h3>
+                <p>se utiliza para tejido, secoracin y manualidades,tejer decoraciones.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+                        <article class="product" data-category="materiales">
+            <img src="img/hojos  19.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>Material plastico</h3>
+                <p>sirve para decrar muñecos,figuras y proyectos creativas.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+
+
+                                <article class="product" data-category="materiales">
+            <img src="img/20 tiza.jpg" alt="materiales">
+            <div class="product-info">
+                <span>MATERIALES</span>
+                <h3>tizas</h3>
+                <p>se utiliza para escribir y dibujar eb pizzaras.</p>
+                <button class="add">Agregar a favoritos ♡</button>
+            </div>
+        </article>
+ 
+
+    </div>
+
+    <p id="emptyState" hidden>
+        No se encontraron productos.
+    </p>
+
+</section>
+
+<!-- OFERTAS -->
+<section class="offers" id="ofertas">
+
+    <div>
+        <span>✦ LIBRERIA SOTO ✦</span>
+        <h2>¡La creatividad no tiene límites!</h2>
+        <p>Descubre nuestros útiles escolares y prepara todo para tus clases.</p>
+        <a href="#productos" class="btn white">Volver a ver →</a>
+    </div>
+
+</section>
+
+<!-- NOSOTROS -->
+<section class="section about" id="nosotros">
+
+    <div>
+        <span>CONÓCENOS</span>
+        <h2>SOMOS LIBRERIA SOTO</h2>
+
+        <p>
+            Somos una librería y papelería dedicada a ofrecer
+            una gran variedad de útiles escolares, materiales
+            de oficina, artículos de arte y productos creativos.
+            Queremos acompañarte en cada etapa de aprendizaje
+            y ayudarte a convertir tus ideas en realidad.
+        </p>
+    </div>
+
+    <div class="mapa">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d906.8686398497217!2d-65.28220073043991!3d-16.959688898990944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e44f6336a80875%3A0x9d31310e7c99d676!2sShinahota!5e1!3m2!1ses-419!2sbo!4v1794951667542!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <div class="about-icon">📚</div>
+
+</section>
+
+<!-- CONTACTO -->
+<section class="contact" id="contacto">
+
+    <h2>¡Conéctate con SOTO!</h2>
+    <p>Estamos aquí para ayudarte.</p>
+ 
+    <div class="social-links">
+        <a href="https://wa.me/+59164847280" target="_blank" rel="noopener noreferrer">whatsapp</a>
+        <a href="https://www.tiktok.com/@._.....j0" target="_blank" rel="noopener noreferrer">TikTok</a>
+    </div>
+
+</section>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+    <h2>SOTO.</h2>
+    <p>Librería & Papelería</p>
+    <p>© 2026 LIBRERIAS SOTO.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
